@@ -1,0 +1,13 @@
+﻿<div class="row">
+    <div class="col-md-12">
+        <a href="/createFood">Create a new food</a>
+        <ul>
+            <!--must iterate through controller.foods-->
+            <li ng-repeat="food in controller.foods">
+                {{food.name}}
+                <button class="btn btn-primary" ng-click="controller.showDetailsModal(food.id)">Details</button>
+                <button class="btn btn-primary" ng-click="controller.deleteFood(food.id)">Delete</button>
+            </li>
+        </ul>
+    </div>
+</div>

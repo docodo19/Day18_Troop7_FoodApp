@@ -1,0 +1,30 @@
+﻿<div class="row">
+    <div class="col-md-6">
+        <form ng-submit="controller.save()">
+            <div class="form-group">
+                <label>Food Name</label>
+                <input type="text" class="form-control" ng-model="controller.food.name"/>
+            </div>
+            <div class="form-group">
+                <label>Food Rating</label>
+                <input type="text" class="form-control" ng-model="controller.food.rating" />
+            </div>
+            <div class="form-group">
+                <label>Food Type</label>
+                <input type="text" class="form-control" ng-model="controller.food.cusineType" />
+            </div>
+            <div class="form-group">
+                <label>Food Calories</label>
+                <input type="text" class="form-control" ng-model="controller.food.calories" />
+            </div>
+            <div class="form-group">
+                <label>Food Avg. Price</label>
+                <input type="text" class="form-control" ng-model="controller.food.price" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save"/>
+            </div>
+        </form>
+        
+    </div>
+</div>
